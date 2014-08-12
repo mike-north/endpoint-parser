@@ -2,6 +2,11 @@
 
 Little module that helps with endpoints parsing.
 
+Install
+
+```sh
+npm install --save bower-endpoint-parser
+```
 
 ## API
 
