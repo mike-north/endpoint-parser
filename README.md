@@ -24,10 +24,10 @@ endpointParser.decompose('backbone=backbone-amd#~1.0.0');
 // { name: 'backbone', source: 'backbone-amd', target: '~1.0.0' }
 
 endpointParser.decompose('http://twitter.github.io/bootstrap/assets/bootstrap.zip');
-// { name: '', source: 'http://twitter.github.io/bootstrap/assets/bootstrap', target: '*' }
+// { name: '', source: 'http://twitter.github.io/bootstrap/assets/bootstrap.zip', target: '*' }
 
 endpointParser.decompose('bootstrap=http://twitter.github.io/bootstrap/assets/bootstrap.zip');
-// { name: 'bootstrap', source: 'http://twitter.github.io/bootstrap/assets/bootstrap', target: '*' }
+// { name: 'bootstrap', source: 'http://twitter.github.io/bootstrap/assets/bootstrap.zip', target: '*' }
 ```
 
 ### .compose(decEndpoint)
@@ -44,10 +44,10 @@ endpointParser.compose({ name: '', source: 'jquery', target: '~2.0.0' });
 endpointParser.compose({ name: 'backbone', source: 'backbone-amd', target: '~1.0.0' });
 // backbone=backbone-amd#~1.0.0
 
-endpointParser.compose({ name: '', source: 'http://twitter.github.io/bootstrap/assets/bootstrap', target: '*' });
+endpointParser.compose({ name: '', source: 'http://twitter.github.io/bootstrap/assets/bootstrap.zip', target: '*' });
 // http://twitter.github.io/bootstrap/assets/bootstrap.zip
 
-endpointParser.compose({ name: 'bootstrap', source: 'http://twitter.github.io/bootstrap/assets/bootstrap', target: '*' });
+endpointParser.compose({ name: 'bootstrap', source: 'http://twitter.github.io/bootstrap/assets/bootstrap.zip', target: '*' });
 // bootstrap=http://twitter.github.io/bootstrap/assets/bootstrap.zip
 ```
 
